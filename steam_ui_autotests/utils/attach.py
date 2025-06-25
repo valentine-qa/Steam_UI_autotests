@@ -7,9 +7,9 @@ def add_screenshot(browser):
     allure.attach(body=png, name='Screenshot', attachment_type=AttachmentType.PNG, extension='.png')
 
 
-def add_logs(browser):
-    log = "".join(f'{text}\n' for text in browser.driver.get_log(log_type='browser'))
-    allure.attach(body=log, name='Logs', attachment_type=AttachmentType.TEXT, extension='.log')
+# def add_logs(browser):
+#     log = "".join(f'{text}\n' for text in browser.driver.get_log(log_type='browser'))
+#     allure.attach(body=log, name='Logs', attachment_type=AttachmentType.TEXT, extension='.log')
 
 
 def add_html(browser):
