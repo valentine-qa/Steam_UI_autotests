@@ -14,7 +14,7 @@ class TestSearch:
     @allure.severity(Severity.CRITICAL)
     @allure.label('Owner', 'valentine-qa')
     def test_search_field(self):
-        browser.open('https://store.steampowered.com/')
+        main_page.open_main_page()
         search_page.click_on_search()
         search_page.find_game(game_name='Dota 2')
         search_page.check_search_result(game_name='Dota 2')
