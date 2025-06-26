@@ -1,4 +1,4 @@
-# Проект по тестированию интернет-магазина <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+# <a target="_blank" href="https://store.steampowered.com/">Steam</a> UI Autotesting Pet Project by valentine-qa
 
 ![main page screenshot](screenshots/steam_main_page.png)
 
@@ -15,7 +15,7 @@
 ---
 
 ### Используемые инструменты
-<img title="Python" src="screenshots/icons/python.svg" height="40" width="40"/> 
+<img title="Python" src="screenshots/icons/python.svg" height="40" width="40"/>
 <img title="Pytest" src="screenshots/icons/pytest.svg" height="40" width="40"/> 
 <img title="Allure Report" src="screenshots/icons/allure_report.png" height="40" width="40"/> 
 <img title="GitHub" src="screenshots/icons/github.svg" height="40" width="40"/> 
