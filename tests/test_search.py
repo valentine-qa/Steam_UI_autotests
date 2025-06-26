@@ -1,6 +1,5 @@
 import allure
 from allure_commons.types import Severity
-from selene import browser, have
 
 from steam_ui_autotests.pages.main_page import main_page
 from steam_ui_autotests.pages.search_page import search_page
