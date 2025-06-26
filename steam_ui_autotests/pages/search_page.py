@@ -13,12 +13,7 @@ class SearchPage:
         with allure.step(f'Enter {game_name} in search field'):
             browser.element('[id="store_nav_search_term"]').type(game_name).press_enter()
 
-
-    def check_search_result(self, game_name):
-        with allure.step(f'Check that {game_name} is founded'):
-            browser.element('.title').should(have.exact_text(game_name))
-
-    def open_game_card(self, game_name):
+    def open_first_game_in_search_row(self, game_name):
         with allure.step(f'Open a {game_name} card'):
             browser.element('[id="search_resultsRows"] a').click()
 

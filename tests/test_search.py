@@ -20,9 +20,6 @@ class TestSearch:
 
         search_page.click_on_search_field()
         search_page.find_game_via_title(game_name)
-
-        search_page.check_search_result(game_name)
-
-        search_page.open_game_card(game_name)
+        search_page.open_first_game_in_search_row(game_name)
 
         search_page.check_game_title(game_name)
