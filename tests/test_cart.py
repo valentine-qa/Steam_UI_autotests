@@ -14,7 +14,7 @@ class TestCart:
     @allure.tag('web')
     @allure.severity(Severity.CRITICAL)
     @allure.label('Owner', 'valentine-qa')
-    def test_add_game_to_cart(self, local_browser_config):
+    def test_add_game_to_cart(self):
         game_name = 'Outlast'
 
         main_page.open_main_page()

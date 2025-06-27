@@ -35,7 +35,7 @@ class CartPage:
 
     def check_cart_is_empty(self):
         with allure.step("Check that cart is empty"):
-            browser.element('[class="Panel Focusable"]').should(have.text('Ваша корзина пуста.'))
+            browser.element('[class="Panel Focusable"]').should(have.text('Your cart is empty.'))
 
 
 cart_page = CartPage()
