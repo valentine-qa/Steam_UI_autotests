@@ -1,4 +1,5 @@
 import os
+import time
 
 import pytest
 from dotenv import load_dotenv
@@ -49,44 +50,8 @@ def browser_management():
     browser.quit()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import time
-#
-# import pytest
-# from selene import browser
-#
-#
 # @pytest.fixture(scope='function', autouse=True)
-# def browser_config():
+# def local_browser_config():
 #     browser.config.driver_name = 'chrome'
 #     browser.config.window_width = '1800'
 #     browser.config.window_height = '1000'
@@ -95,3 +60,9 @@ def browser_management():
 #
 #     time.sleep(3)
 #     browser.quit()
+
+
+
+
+
+
