@@ -1,0 +1,56 @@
+https://jenkins.autotests.cloud/job/Steam_UI_autotests/configure
+
+
+1. Restrict where this project can be run  ----> python
+2. Git URL (Source.png)
+3. Tree name
+4. Environment  ----> Build steps ----> Create/Update Text File/Execute shell
+ 1) Create/Update Text File ---->   (Create_Update_Text_File 1.png)
+ File path ---> notifications/config.json
+ Text File Content:        Данные для Тг репортов
+{
+  "base": {
+    "logo": "",
+    "project": "${JOB_NAME}",
+    "environment": "valentine-qa",
+    "comment": "This test made valentine-qa comment",
+    "reportLink": "${BUILD_URL}",
+    "language": "en",
+    "allureFolder": "allure-report",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "7024882652:AAHOTHKq-RP6l5tYTK0zNBn0-hOzloHdPkg",
+    "chat": "-1002726954300",
+    "replyTo": ""
+  }
+}
+ 2) Create/Update Text File ---->   (Create_Update_Text_File 2.png)
+    File path ---> .env
+    Text File Content:      Данные для входа в selenoid
+        LOGIN="user1"
+        PASSWORD="1234"
+ 3) Execute shell   (Execute_shell.png)
+    Command
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    pytest tests    УКАЗВВАЕМ ПАПКУ КОТОРУЮ БУДЕМ ЗАПУСКАТЬ НА JENKINS
+5.  Post-build Actions
+ 1) Allure Report
+ Path ---> allure-results
+ 2)Post build task  (Post_build_tasks.png)
+    Script ---->
+    cd ..
+    FILE=allure-notifications-4.8.0.jar
+    if [ ! -f "$FILE" ]; then
+        wget https://github.com/qa-guru/allure-notifications/releases/download/4.6.1/allure-notifications-4.8.0.jar
+    fi
+ 3)Add another task ---->
+    Script ---->
+    java "-DconfigFile=notifications/config.json" -jar ../allure-notifications-4.8.0.jar
+6. Environment ----> Allure: upload results  (Allure_upload_results.png)
+    Server ---> allure-server
+    Project (From allure_test_ops)
+    Launch name ---> ${JOB_NAME} - #${BUILD_NUMBER}
+    Results ---> allure results
