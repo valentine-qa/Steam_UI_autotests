@@ -1,4 +1,5 @@
 import allure
+import pytest
 from allure_commons.types import Severity
 
 
@@ -6,12 +7,13 @@ from allure_commons.types import Severity
 @allure.tag('web')
 @allure.severity(Severity.CRITICAL)
 @allure.label('Owner', 'valentine-qa')
-def test_fail():
+def test_failed():
     assert False
 
 @allure.title('Pass example')
 @allure.tag('web')
 @allure.severity(Severity.CRITICAL)
 @allure.label('Owner', 'valentine-qa')
-def test_pass():
+@pytest.mark.skip
+def test_skipped():
     pass
