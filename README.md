@@ -14,42 +14,32 @@
 
 ---
 
-### Используемые инструменты
-<img title="Python" src="screenshots/icons/python.svg" height="40" width="40"/>
-<img title="Pytest" src="screenshots/icons/pytest.svg" height="40" width="40"/> 
-<img title="Allure Report" src="screenshots/icons/allure_report.png" height="40" width="40"/> 
-<img title="GitHub" src="screenshots/icons/github.svg" height="40" width="40"/> 
-<img title="Selenoid" src="screenshots/icons/selenoid.png" height="40" width="40"/> 
-<img title="Selene" src="screenshots/icons/selene.png" height="40" width="40"/> 
-<img title="Pycharm" src="screenshots/icons/pycharm-original.svg" height="40" width="40"/> 
-<img title="Telegram" src="screenshots/icons/telegram.png" height="40" width="40"/> 
-<img title="Jenkins" src="screenshots/icons/jenkins-original.svg" height="40" width="40"/> 
-<img title="Allure TestOps" src="screenshots/icons/allure_testops.svg" height="40" width="40"/> 
-<img title="Jira" src="screenshots/icons/jira.svg" height="40" width="40"/>
+### Used Tools
+<img title="Python" src="screenshots/icons/python.svg" height="40" width="40"/><img title="Pytest" src="screenshots/icons/pytest.svg" height="40" width="40"/><img title="GitHub" src="screenshots/icons/github.svg" height="40" width="40"/><img title="Selenoid" src="screenshots/icons/selenoid.png" height="40" width="40"/><img title="Selene" src="screenshots/icons/selene.png" height="40" width="40"/><img title="Pycharm" src="screenshots/icons/pycharm-original.svg" height="40" width="40"/><img title="Telegram" src="screenshots/icons/telegram.png" height="40" width="40"/><img title="Jenkins" src="screenshots/icons/jenkins-original.svg" height="40" width="40"/><img title="Allure TestOps" src="screenshots/icons/allure_testops.svg" height="40" width="40"/><img title="Jira" src="screenshots/icons/jira.svg" height="40" width="40"/>
 
 ---
 
-### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/zmamedov-qa_guru_Steam_ui_test/)
+### Run autotests with Jenkins
+> [Link on task in Jenkins](https://jenkins.autotests.cloud/job/Steam_UI_autotests/)
 
-#### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/zmamedov-qa_guru_Steam_ui_test/)
+#### To run autotests in Jenkins
+1. Open [task in Jenkins](https://jenkins.autotests.cloud/job/Steam_UI_autotests/)  
+   (Username/password for authorization in Jenkins: valentine_guest)
+![jenkins job main page](screenshots/Jenkins_task.png)
 
-![jenkins job main page](pictures/Jenkins_job_main_page.png)
-
-2. Нажать "**Build Now**".
+2. Click "**Build Now**".
 
 ---
 
-### Allure отчет
+### Allure report
 
-#### Общие результаты
-![allure_report main page](pictures/allure_report_main_page.png)
+#### Overall result
+![allure_report main page](screenshots/Allure_Report.png)
 
-#### Результаты прохождения тестов
-![allure_report suites](pictures/allure_report_suites.png)
+#### Test results
+![allure_report suites](screenshots/Test_results.png)
 
-#### Графики
+#### Graphics
 ![allure_report graph_1](pictures/allure_report_graph_1.png)
 ![allure_report graph_2](pictures/allure_report_graph_2.png)
 
