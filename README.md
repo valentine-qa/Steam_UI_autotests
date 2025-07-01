@@ -4,13 +4,11 @@
 
 ---
 ### Check list of autotests
-1. Переход на вкладку "Community".
-2. Смена языка на сайте на французский.
-3. Search game by title.
-4. Переход на страницу авторизации.
-5. Добавление игры в корзину.
-6. Удаление игры из корзины.
-7. Очистка всей корзины.
+1. Search game by title.
+2. Moving to login page.
+3. Adding a game to the cart.
+4. Removing a game from the cart.
+5. Clearing cart.
 
 ---
 
@@ -24,7 +22,7 @@
 
 #### To run autotests in Jenkins
 1. Open [task in Jenkins](https://jenkins.autotests.cloud/job/Steam_UI_autotests/)  
-   (Username/password for authorization in Jenkins: valentine_guest)
+   (Username/password for authorization in Jenkins: valentine_guest/valentine_guest)
 ![jenkins job main page](screenshots/Jenkins_task.png)
 
 2. Click "**Build Now**".
@@ -36,39 +34,40 @@
 #### Overall result
 ![allure_report main page](screenshots/Allure_Report.png)
 
-#### Test results
+#### Test results with screenshots, html files, logs and videos
 ![allure_report suites](screenshots/Test_results.png)
 
 #### Graphics
-![allure_report graph_1](pictures/allure_report_graph_1.png)
-![allure_report graph_2](pictures/allure_report_graph_2.png)
+![allure_report graph_1](screenshots/Allure_graphics_1.png)
+![allure_report graph_2](screenshots/Allure_graphics_2.png)
 
 ---
 
-### Интеграция с Allure TestOps
-> [Дашборд с общими результатами](https://allure.autotests.cloud/project/4223/dashboards)
+### Integration Jenkins with Allure TestOps
+(Login/password: allure8/allure8)
+> [Dashboard with general results](https://allure.autotests.cloud/project/4223/dashboards)
 
-![allure_testops dashboard](pictures/allure_testops_dashboard.png)
+![allure_testops dashboard](screenshots/Test_Ops.png)
 
-> [Тест-кейсы](https://allure.autotests.cloud/project/4223/dashboards)
+> [Test-cases](https://allure.autotests.cloud/project/4816/test-cases/38739?treeId=0)
 
-![allure_testops test_cases](pictures/allure_testops_test_cases.png)
-
----
-
-### Интеграция с Jira
-> [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1234)
- 
-![jira task](pictures/jira_task.png)
+![allure_testops test_cases](screenshots/Test_cases.png)
 
 ---
 
-### Уведомления в Телеграм
-
-![telegram_notification](pictures/tg_notification.png)
+### Integration Jenkins with Jira
+> [Tasks in Jira](https://jira.autotests.cloud/browse/HOMEWORK-1473)  
+(Login/password: jira8/jira8) 
+![jira task](screenshots/Jira_main.png)
 
 ---
 
-### Прохождение автотеста
+### Telegram Alerts
 
-![autotest](pictures/clear_cart.gif)
+![telegram_notification](screenshots/Telegram_alert.png)
+
+---
+
+### Autotest video
+
+![autotest](screenshots/autotest_runing.gif)
